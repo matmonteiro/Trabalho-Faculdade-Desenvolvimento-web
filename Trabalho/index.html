@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateus Monteiro</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="imagex/png" href="img/feacp.png">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light custom-navbar-bg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Projeto Full Stack</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about" data-scroll="true">Sobre mim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contact
+                            Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="carouselExample" class="carousel slide custom-carousel-bg" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/slide.jpg" class="d-block w-100" alt="Image 1">
+            </div>
+        </div>
+    </div>
+    <!-- Fim do Carousel -->
+
+    <!-- Sobre mim -->
+    <section id="about" class="about text-center my-5">
+        <h2>Sobre mim</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <div class="rounded-circle mx-auto" id="profile-picture">
+                        <img src="img/eu.jpg" alt="Foto de perfil" class="img-fluid rounded-circle mx-auto"
+                            style="width: 200px; height: 200px; object-fit: cover; border-radius: 50%;">
+                    </div>
+                    <p>Meu nome é Mateus Monteiro Augusto, tenho 20 anos e atualmente estou cursando o segundo semestre
+                        de Análise e Desenvolvimento de Sistemas. Também sou parte da equipe da KPMG Brasil, onde estou
+                        aprimorando minhas habilidades no campo da tecnologia. Meu objetivo é me tornar um desenvolvedor
+                        full stack, abrangendo tanto o desenvolvimento front-end quanto o back-end para criar soluções
+                        completas e inovadoras.
+                    </p>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#contactModal"
+                        class="btn btn-primary"><span>Contact
+                            Me</span> </a>
+                </div>
+            </div>
+        </div>
+        <!-- Redes sociais -->
+
+        <div class="container">
+            <h3></h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="https://www.instagram.com/">
+                        <img src="img/insta.png" alt="Rede social 1" id="redesocial" class="img-fluid rounded-circle">
+                        <p>Instagram</p>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.linkedin.com/in/mateusmonteiroaugusto/">
+                        <img src="img/linkedin.png" alt="Rede social 2" id="redesocial"
+                            class="img-fluid rounded-circle">
+                        <p>Linkedin</p>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://github.com/matmonteiro">
+                        <img src="img/git.png" alt="Rede social 3" id="redesocial" class="img-fluid rounded-circle">
+                        <p>GitHub</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fim do sobre mim e das redes sociais -->
+
+    <!-- Footer -->
+    <footer class="text-footer text-center py-3">
+        <hr class="rgba-white-light" style="margin: 0 15%;">
+        <p>&copy; 2023 Mateus Monteiro - Todos os direitos reservados</p>
+    </footer>
+
+    <!--Formulairo de contato -->
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Contact Me</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Formulário de contato -->
+                    <form action="https://formsubmit.co/mateusmonteiro268@gmail.com" method="POST">
+                        <div class="form-group">
+                            <label for="name">Nome:</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea id="mensagem" name="mensagem" class="form-control" required></textarea>
+                        </div>
+
+                        <div class="form-group" style="display: none;">
+                            <label for="confirmation">Confirmação:</label>
+                            <input type="text" id="confirmation" name="confirmation" class="form-control">
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="margin-top: 20px;">Enviar</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        // Função para abrir a janela de contato
+        function openContactModal() {
+            var contactModal = new bootstrap.Modal(document.getElementById('contactModal'));
+            contactModal.show();
+        }
+
+        // Função para enviar o formulário
+        function submitForm() {
+
+        }
+
+
+        document.getElementById('contact-button').addEventListener('click', openContactModal);
+
+
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            // valores
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var mensagem = document.getElementById('mensagem').value;
+
+            // Validar se os campos estão vazios
+            if (name.trim() === '') {
+                alert('Por favor, preencha o campo de nome.');
+                event.preventDefault();
+                return;
+            }
+
+
+            if (!email.includes('@')) {
+                alert('Por favor, insira um endereço de email válido.');
+                event.preventDefault();
+                return;
+            }
+
+
+            if (mensagem.trim() === '') {
+                alert('Por favor, preencha o campo de mensagem.');
+                event.preventDefault();
+                return;
+            }
+
+
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            var scroll = new SmoothScroll('a[href*="#"]', {
+                speed: 800,
+                speedAsDuration: true
+            });
+
+            //  evento do sobre mim na Navbar
+            var aboutNavLink = document.querySelector('a[href="#about"]');
+            aboutNavLink.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.getElementById('about-link').click();
+            });
+
+
+            if (performance.navigation.type === 1) {
+
+                window.scrollTo(0, 0);
+            }
+        });
+    </script>
+</body>

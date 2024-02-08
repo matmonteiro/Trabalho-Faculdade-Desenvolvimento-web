@@ -1,0 +1,109 @@
+/* Foto de perfil */
+#profile-picture {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#profile-picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Configurações da pagina*/
+footer {
+    color: #fff;
+    padding: 15px 0;
+}
+
+#redesocial {
+    width: 25%;
+}
+
+/* Barra de rolagem */
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #920000;
+    border-radius: 10px;
+}
+
+
+.navbar-brand {
+    color: black;
+}
+
+#navbarNav .nav-link {
+    color: black;
+}
+
+.text-footer {
+    color: black;
+}
+
+.about {
+    color: black;
+}
+
+#about .btn {
+    margin-bottom: 20px;
+    background-color: #920000;
+    border-color: #920000;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    width: 200px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#about .btn span {
+    position: relative;
+    transition: 0.5s;
+}
+
+
+#about .btn span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#about .btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+#about .btn:hover span {
+    padding-right: 25px;
+}
+
+/* links */
+a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #920000;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #920000 !important;
+    text-decoration: underline;
+}
